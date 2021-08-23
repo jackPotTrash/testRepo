@@ -3,7 +3,7 @@
 class Lessons{
 	public static void main(String[] arc){//сперва модификатор тип название метода
 	
-	System.out.println("Hello World!")
+	System.out.println("Hello World!");
 		
 		
 	}
