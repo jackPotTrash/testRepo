@@ -8,6 +8,58 @@ java "название без расширения"
 
 
 
+GIT
+
+Commands:
+	git init - команда для инициализации репозитория(создается системная папка которая называется .git)
+	git status - что происходит сейчас
+	git add название.файла - для того чтоб гит следил за файлом
+	git add . - для того чтоб гит следил за всеми файлами
+	
+	commit - это такой фикс нашей версии чтоб потом с ней можно было работать
+	git commit -m(-message) "название сообщения"(любое)
+	
+	.gitignore - файл который игнорирует git(в такой файл вносятся перечень файлов и папок которые недолжны быть видны)
+		его обязательно нужно затрэкать
+	
+	git commit -m "название коммита" - это ветка проекта(в ней будут(могут) вносится изменения)
+	
+	git branch - ветка
+		разработчик создает новую ветку
+	git branch test - создаст новую ветку test
+		git branch -D test - удалит ветку test
+	git checkout test - переключит нас на ветку test
+	git checkout -b new - создаст и сразу переключится на новую ветку new
+	
+	git merge test - совместит основную ветку с веткой test
+	
+	
+	Работа с github
+	git config --global user.name ""
+	git config --global user.email ""
+	
+	//////////////// команды для добавления репозитория на github\\\\\\\\\\\\
+	
+	echo "# testRepo" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git branch -M main
+	git remote add origin https://github.com/jackPotTrash/testRepo.git
+	git push -u origin main
+	///////////////////////////////////////////////////////////////////////////
+	
+	Если в репозиторий GitHub добавлены новые коммиты, 
+	пока вы работали локально, я бы посоветовал использовать:
+	git pull --rebase
+	git push
+	
+	
+	*md - mark down
+
+
+
+
 usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
            [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
