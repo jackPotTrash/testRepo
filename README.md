@@ -1,3 +1,13 @@
+*компиляция
+javac "название файла"
+пример: javac Lesson.javac
+
+*запуск
+java "название без расширения"
+пример: java Lesson
+
+
+
 usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
            [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
