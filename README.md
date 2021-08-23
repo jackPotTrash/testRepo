@@ -51,6 +51,7 @@ Commands:
 	
 	Если в репозиторий GitHub добавлены новые коммиты, 
 	пока вы работали локально, я бы посоветовал использовать:
+	* https://stackoverflow.com/questions/24114676/git-error-failed-to-push-some-refs-to-remote
 	git pull --rebase
 	git push
 	
